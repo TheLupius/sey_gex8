@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 8 — DOM и события</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #container {
+            padding: 15px;
+            border: 1px solid #aaa;
+        }
+        .item {
+            padding: 10px;
+            margin: 6px 0;
+            background: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Работа с DOM и событиями</h1>
+
+    <button id="btn">Нажми меня</button>
+    <hr>
+    <form id="myForm">
+        <label>
+            Введите текст:
+            <input type="text" id="textInput">
+        </label>
+        <button type="submit">Отправить</button>
+    </form>
+    <p id="out"></p>
+    <hr>
+    <h2>Пример всплытия событий</h2>
+
+    <div id="container">
+        <div class="item">Элемент 1</div>
+        <div class="item">Элемент 2</div>
+        <div class="item">Элемент 3</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
